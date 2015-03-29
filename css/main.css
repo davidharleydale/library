@@ -1,0 +1,156 @@
+/* # Elements
+
+basic styling of the html tags
+
+*/
+
+body{
+    color: white;
+    background-color: #FAFAF1;
+    margin: 0;
+    padding: 0;
+}
+
+/* ## Basic Tags
+
+Primary basic tag styles used throughout the site
+
+    <p class="omega">Alpha Heading</p>
+    <p class="beta">Beta Heading</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+
+*/
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.omega {
+    font-size: 60px;
+}
+
+.beta{
+    font-size: 48px;
+}
+
+/* ## Header
+
+Header structure of the site.
+
+*/
+
+.header {
+    background-color: #89C5B9;
+    height: 70px;
+}
+
+/* ## Navigation
+
+Navigation structure of the site.
+
+*/
+
+nav {
+    background-color: #3D3B36;
+    height: 43px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+/* # Objects
+
+Modular Objects re-used throughout site
+
+*/
+
+/* ## Search Bar
+
+Search bar to parse through the library database
+
+*/
+
+.search {
+    background-color: silver;
+}
+
+/* ## Media Object
+
+Image + Content arranged next to each other
+
+*/
+
+.media{
+    overflow: hidden;
+}
+
+.media .src {
+    float: left;
+    margin-right: 10px;
+}
+
+.media .body {
+    overflow: hidden;
+}
+
+.additional-info{
+    background-color: darkgray;
+    color: white;
+}
+/*
+
+# Modules
+
+*/
+
+.support{
+    background-color: orange;
+}
+
+/*
+
+## Book Item
+
+Based off the media object.
+
+*/
+
+.book-item{
+    color: black;
+}
+
+.book-item .src{
+    margin-right: 0;
+}
+
+.book-item .body{
+    padding: 10px 20px;
+}
+
+
+/*
+
+# Footer
+
+This is the footer.
+
+*/
+
+footer {
+    background-color: #89C5B9;
+    border-top: 15px solid #3D3B36;
+    height: 250px;
+}

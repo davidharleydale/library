@@ -1,14 +1,241 @@
-<html>
-    <head>
-        <title>Dribble API Examples</title>
-        <link href="css/site.css" rel="stylesheet">
-    </head>
+<!DOCTYPE html>
 
-    <body data-features="dribbble">
-        <div class="container" id="container">
-
+<head>
+  <title>Decker Library | Maryland Institute College of Art</title>
+  <link href="//cloud.webtype.com/css/25fd58b0-193a-4931-8ba3-c87f7ff6ea96.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="//use.typekit.net/lcu1kmo.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+    <header>
+    <div class="logo-login">
+        <img src="/images/logo.svg">
+        <form>
+<input type="text" name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<input class="griffithgothicblack login-form" type="submit" value="LOGIN">
+</form>
+    </div>
+    <nav>
+        <div class="nav-container">
+        <div class="operation-hours">
+            Today's Hours: 8:30am-4:00pm
         </div>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="js/site.js"></script>
-    </body>
+        <div class="nav-wrapper">
+
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Faculty Resources</a>
+            </li>
+            <li>
+                <a href="#">Research Resources</a>
+            </li>
+            <li>
+                <a href="#">Policies &amp; Guidelines</a>
+            </li>
+        </ul>
+    </div>
+</div>
+    </nav>
+</header>
+
+<section class="search-header">
+    <div class="page-title">
+        <h1>Decker Library</h1>
+    </div>
+    <div class="search-bar">
+        <div class="search-block">
+            Search
+        </div>
+        <form>
+            <input type="text" name="looking-for" placeholder="I'm looking for...">
+            <select>
+              <option value="pick a section">Pick a section</option>
+              <option value="fiction">Fiction</option>
+              <option value="non-fiction">Non-Fiction</option>
+              <option value="digital">Digital</option>
+            </select>
+            <input class="griffithgothicblack" type="submit" value="Go">
+        </form>
+    </div>
+</section>
+
+<section class="more-links">
+    <!-- Special Collections Flipper -->
+<!--
+    <div class="special-collections more-info">
+        <div class="overlay">
+            Special <br> Collections
+        </div>
+        <div class="more-button">
+            +
+        </div>
+    </div> -->
+    <div class="flip-container more-info" onClick="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front special-collections">
+
+                    <div class="overlay">
+                        Special <br> Collections
+                    </div>
+                    <div class="more-button">
+                        +
+                    </div>
+                </div>
+                <div class="back additional-links">
+                    <p class="griffithgothicblack">
+                        Special Collections
+                    </p>
+                    <ul>
+                        <li>Book Arts Catalog</li>
+                        <li>MICA Archives</li>
+                        <li>Masters Thesis Collection</li>
+                        <li>Artist Files</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- Images & Media Flipper -->
+    <div class="flip-container more-info" onClick="this.classList.toggle('hover');">
+    		<div class="flipper">
+    			<div class="front images-media">
+                    <div class="overlay">
+                            Images &amp; <br> Media
+                    </div>
+                    <div class="more-button">
+                        +
+                    </div>
+    			</div>
+    			<div class="back additional-links">
+                    <p class="griffithgothicblack">
+                        Images &amp; Media
+                    </p>
+                    <ul>
+                        <li>Alexander St. Press Video</li>
+                        <li>AP Images</li>
+                        <li>Art Museum Image Gallery</li>
+                        <li>ARTstor</li>
+                        <li>Films on Demand Video</li>
+                        <li>Image Quest</li>
+                    </ul>
+    			</div>
+    		</div>
+    </div>
+
+    <!-- Additional Resources -->
+    <div class="flip-container more-info" onClick="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front additional-resources">
+                    <div class="overlay">
+                            Additional <br> Resources
+                    </div>
+                    <div class="more-button">
+                        +
+                    </div>
+                </div>
+                <div class="back additional-links">
+                    <p class="griffithgothicblack">
+                        Additional Resources
+                    </p>
+                    <ul>
+                        <li>A-Z Journal List</li>
+                        <li>Dover Series Index</li>
+                        <li>Journals, Sketchbooks &amp; Visual Diaries</li>
+                        <li>Research Guides</li>
+                        <li>Text Finder</li>
+                        <li>Tutorials</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+
+
+</section>
+
+<section class="exhibit-support">
+    <div class="library-exhibition">
+        <div class="exhibition-block">
+            Library Exhibition
+        </div>
+        <div class="exhibition-image">
+            <img src="images/russian-exhibition.png">
+        </div>
+        <div class="exhibition-text">
+            <p class="exhibition-date">06.15.15</p>
+            <p class="exhibition-header">History of Ink</p>
+            <p>
+                Tattoos are not simply for sailors. Modern tattoo art is growing in popularity with the widespread availability of sanitary professional tattoo parlors. Chances are you, or someone you know, has some ink - a 2008 study by the Pew Research Center concludes that one in three adults between the ages of 18 and 25 has a tattoo…
+            </p>
+        </div>
+
+    </div>
+    <a href="#"><div class="library-support">
+        Support the Library &raquo;
+    </div></a>
+
+
+
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="library-info-container">
+            <div class="library-information griffithgothicblack">
+                The Decker Library at MICA
+            </div>
+            <div class="library-information-contact">
+                <table>
+                  <tr>
+                    <td><strong>Semester hours</strong><br>
+                            Mon-Thu 8:30am-9pm<br>
+                            Fri 8:30am-4:30pm<br>
+                            Sat-Sun 12pm-6pm</td>
+                    <td><strong>Circulation</strong> <br>
+                            410.225.2272<br>
+                            FAX 410.225.2316<br>
+                            circ@mica.edu</td>
+                    <td><strong>Interlibrary Loan</strong><br>
+                            ill@mica.edu<br><br><br></td>
+                    <td><strong>Reference</strong><br>
+                        410.225.2273<br>
+                            FAX 410.225.2315<br>
+                            refer@mica.edu</td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="social-media-container">
+            <div class="social-media griffithgothicblack">
+                    Follow Us!
+            </div>
+            <div class="social-media-icons">
+                <ul>
+                    <li><img src="/images/twitter-icon.svg"></li>
+                    <li><img src="/images/facebook-icon.svg"></li>
+                    <li><img src="/images/google-icon.svg"></li>
+                    <li><img src="/images/pinterest-icon.svg"></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+    <!-- build:js scripts/site.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+</body>
+
 </html>
