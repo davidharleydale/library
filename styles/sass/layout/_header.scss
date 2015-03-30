@@ -15,33 +15,52 @@ header{
     .logo-login {
         @include outer-container;
         height: 150px;
+        text-align: center;
 
         @include media($desktop) {
 
         height: 70px;
         padding-top: .75em;
+        text-align: auto;
         }
 
         img{
-            float: left;
+            width: 50%;
+            @include media($tablet) {
+                float: left;
+                width: auto;
+                }
         }
 
         form{
-            float: right;
             margin-top: .5em;
+            @include media($desktop) {
+                float: right;
+            }
+
             input{
-                height: 33px;
+                height: 50px;
                 padding: 1em;
                 color: #777776;
                 font-size: 1em;
                 margin-right: .5em;
                 border: none;
 
+                @include media($desktop) {
+                    float: left;
+                    height: 33px;
+                }
+
                 &:last-child{
                     padding: 0 1em;
                     color: white;
                     background-color: #3D3B36;
                     margin-right: 0;
+                    width: 40%;
+
+                    @include media($desktop) {
+                        width: auto;
+                    }
 
                     &:hover{
                         background-color: #201F1C;
@@ -62,8 +81,15 @@ Navigation structure of the site.
 
 nav {
     background-color: #3D3B36;
-    height: 43px;
     color: white;
+    text-align: center;
+
+    @include media($desktop) {
+        height: 43px;
+        text-align: left;
+
+
+    }
 }
 
 .nav-container{
@@ -71,23 +97,37 @@ nav {
 }
 
 .nav-wrapper{
-    @include span-columns(8);
+    @include span-columns(12);
+
+    @include media($desktop) {
+        @include span-columns(8);
+
+    }
 
 }
 
 .operation-hours{
-    @include span-columns(4);
+    @include span-columns(12);
     padding-top: .75em;
 
+    @include media($desktop) {
+        @include span-columns(4);
+    }
 
 }
 
 nav ul {
-    text-align: right;
+
     list-style: none;
-    margin: 0;
     padding: 0;
-    padding-top: .75em;
+
+    @include media($desktop) {
+        text-align: right;
+        margin: 0;
+        padding-top: .75em;
+
+
+    }
 }
 
 nav ul li {

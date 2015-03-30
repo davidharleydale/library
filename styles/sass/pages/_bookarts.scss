@@ -1,0 +1,41 @@
+.search-header.internal-page{
+    height: 200px;
+    background-position: 0%;
+    .page-title{
+        padding-top: 60px;
+    }
+}
+
+.book-arts-wrapper{
+    @include outer-container;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+
+    .book-arts-detail{
+        color: white;
+        background-color: #89C5B9;
+
+        width: 100%;
+        margin-bottom: 1em;
+
+            @include media($tablet){
+                width: 45%;
+                margin: 1em;
+            }
+
+            @include media($desktop) {
+
+                width: 31.8%;
+                margin: 0 1em 1em 0;
+                float: left;
+            }
+
+            .book-arts-text{
+                padding: 1em;
+            }
+
+        p{
+            margin: 0;
+        }
+    }
+}

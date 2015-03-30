@@ -5,18 +5,16 @@
   <link href="//cloud.webtype.com/css/25fd58b0-193a-4931-8ba3-c87f7ff6ea96.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <script src="//use.typekit.net/lcu1kmo.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
     <header>
     <div class="logo-login">
-        <img src="/library/images/logo.svg">
+        <a href="index.html"><img src="/library/images/logo.svg"></a>
         <form>
-<input type="text" name="username" placeholder="Username">
-<input type="password" name="password" placeholder="Password">
-<input class="griffithgothicblack login-form" type="submit" value="LOGIN">
-</form>
+            <input class="desktop" type="text" name="username" placeholder="Username">
+            <input class="desktop" type="password" name="password" placeholder="Password">
+            <input class="griffithgothicblack login-form" type="submit" value="LOGIN">
+        </form>
     </div>
     <nav>
         <div class="nav-container">
@@ -52,16 +50,19 @@
         <div class="search-block">
             Search
         </div>
-        <form>
-            <input type="text" name="looking-for" placeholder="I'm looking for...">
-            <select>
-              <option value="pick a section">Pick a section</option>
-              <option value="fiction">Fiction</option>
-              <option value="non-fiction">Non-Fiction</option>
-              <option value="digital">Digital</option>
-            </select>
-            <input class="griffithgothicblack" type="submit" value="Go">
-        </form>
+        <div class="search-form">
+            <form>
+                <input type="text" name="looking-for" placeholder="I'm looking for...">
+                <select>
+                  <option value="pick a section">Pick a section</option>
+                  <option value="fiction">Fiction</option>
+                  <option value="non-fiction">Non-Fiction</option>
+                  <option value="digital">Digital</option>
+                </select>
+                <input class="griffithgothicblack" type="submit" value="Go">
+            </form>
+        </div>
+
     </div>
 </section>
 
@@ -166,7 +167,7 @@
             Library Exhibition
         </div>
         <div class="exhibition-image">
-            <img src="/library/images/russian-exhibition.png">
+            <img src="images/russian-exhibition.png">
         </div>
         <div class="exhibition-text">
             <p class="exhibition-date">06.15.15</p>
@@ -192,7 +193,28 @@
                 The Decker Library at MICA
             </div>
             <div class="library-information-contact">
-                <table>
+                <table class="mobile">
+                  <tr>
+                    <td><strong>Semester hours</strong><br>
+                            Mon-Thu 8:30am-9pm<br>
+                            Fri 8:30am-4:30pm<br>
+                            Sat-Sun 12pm-6pm</td>
+                    <td><strong>Circulation</strong> <br>
+                            410.225.2272<br>
+                            FAX 410.225.2316<br>
+                            circ@mica.edu</td>
+                </tr>
+                <tr>
+                    <td><strong>Interlibrary Loan</strong><br>
+                            ill@mica.edu<br><br><br></td>
+                    <td><strong>Reference</strong><br>
+                        410.225.2273<br>
+                            FAX 410.225.2315<br>
+                            refer@mica.edu</td>
+                  </tr>
+                </table>
+
+                <table class="desktop">
                   <tr>
                     <td><strong>Semester hours</strong><br>
                             Mon-Thu 8:30am-9pm<br>
@@ -229,7 +251,8 @@
 
     </div>
 </footer>
-
+    <script src="//use.typekit.net/lcu1kmo.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
     <!-- build:js scripts/site.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>

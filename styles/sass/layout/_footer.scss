@@ -5,12 +5,30 @@
 This is the footer.
 
 */
+.mobile{
+    display: inline;
 
+    @include media($desktop) {
+        display: none;
+    }
+}
+
+.desktop{
+    display: none;
+
+    @include media($desktop) {
+        display: inline;
+    }
+}
 footer {
     background-color: #89C5B9;
     border-top: 0.938em solid #3D3B36;
-    height: 250px;
+    height: 300px;
     color: white;
+
+    @include media($desktop) {
+        height: 250px;
+    }
 
     .footer-content{
         @include outer-container;
@@ -36,6 +54,15 @@ footer {
                         tr{
                             font-size: 14px;
                             line-height: 18px;
+
+                            td{
+                                padding-right: 2em;
+                                padding-bottom: 2em;
+
+                                @include media($desktop) {
+                                    padding-right: 7em;
+                                }
+                            }
                         }
                     }
                 }
@@ -64,7 +91,10 @@ footer {
                     margin-top: 0;
                     li{
                         display: inline;
+                        padding-right: 1em;
+                        @include media($desktop) {
                         padding-right: 2.1em;
+                        }
 
                         &:hover{
                             fill: red;

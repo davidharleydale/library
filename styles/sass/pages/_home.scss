@@ -11,7 +11,7 @@ body{
 }
 
 section.search-header{
-    background: url("/library/images/holding-book.png");
+    background: url("/images/holding-book.png");
     background-size: cover;
     height: 356px;
     color: white;
@@ -48,14 +48,24 @@ section.search-header{
 
         }
 
-        form{
+        .search-form{
+            width: auto;
+            margin: auto;
+            padding-left: 3%;
 
+            @include media($desktop) {
+                width: 82%;
+            }
+        }
+
+        form{
             input{
                 height: 47px;
                 width: 40%;
                 padding: 1em;
                 margin-right: .5em;
                 border: none;
+                float: left;
 
                 &:last-child{
                     width: auto;
@@ -71,6 +81,7 @@ section.search-header{
 
             select{
                 padding: 1em;
+                float: left;
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
@@ -81,6 +92,7 @@ section.search-header{
                 border-radius: 0px;
                 background: white;
                 color: gray;
+                margin-right: .5em;
 
                 height: 47px;
                 width: 40%;
@@ -191,17 +203,17 @@ section.more-links {
     }
 
     .special-collections{
-        background: url("/library/images/book.png");
+        background: url("/images/book.png");
         background-size: cover;
     }
 
     .images-media {
-        background: url("/library/images/book-desk.png");
+        background: url("/images/book-desk.png");
         background-size: cover;
     }
 
     .additional-resources{
-        background: url("/library/images/full-desk.png");
+        background: url("/images/full-desk.png");
         background-size: cover;
     }
 
@@ -213,7 +225,6 @@ section.exhibit-support{
         @include span-columns(12);
 
         background-color: #3D3B36;
-        height: 266px;
         margin: auto auto 42px auto;
         color: white;
         position: relative;
@@ -223,6 +234,8 @@ section.exhibit-support{
 
         @include media($desktop) {
              @include span-columns(8);
+             height: 266px;
+
             }
 
         .exhibition-block{
@@ -240,13 +253,21 @@ section.exhibit-support{
         }
 
         .exhibition-image{
-            width: 25%;
+            width: 38%;
             float: left;
+
+            @include media($desktop) {
+                width: 25%;
+                }
         }
 
         .exhibition-text{
-            width: 70%;
+            width: 50%;
             float: left;
+
+            @include media($desktop) {
+                width: 70%;
+                }
 
             p{
                 margin-top: 0;

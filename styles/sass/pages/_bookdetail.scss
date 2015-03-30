@@ -1,0 +1,119 @@
+.book-detail-wrapper{
+    @include outer-container;
+    margin: 42px auto 42px auto;
+
+.book-detail-filter-wrapper{
+    @include span-columns(4);
+
+    .book-detail-filter{
+        background-color: #EFEFEF;
+        position: relative;
+        height: 50px;
+
+        .filter-title{
+            width: 200px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.25em;
+            background-color: #363630;
+            padding: .5em;
+            text-align: center;
+            position: relative;
+            top: -1em;
+            left: -1em;
+        }
+    }
+
+    .book-detail-category{
+        background-color: #EFEFEF;
+        margin-top: 2px;
+        padding: .5em 1em 1em 1em;
+        font-size: 14px;
+
+        select{
+            padding: .5em 1em;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: none;
+            border-top-width: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+            background: white;
+            color: gray;
+            margin-top: .25em;
+            margin-bottom: .5em;
+            height: 47px;
+            width: 100%;
+        }
+    }
+
+    .filter-title{
+        background-color: #EFEFEF;
+        margin-top: 2px;
+        padding: 1em 1em 1em 1em;
+        font-size: 14px;
+
+        p{
+            margin: 0;
+        }
+    }
+
+    .topic-category{
+        background-color: #F5F5F5;
+        padding: .5em 1em 1em 1em;
+
+        form{
+            input {
+                margin-top: 1em;
+                margin-bottom: .5em;
+            }
+        }
+
+
+    }
+}
+
+    .book-detail-container{
+        @include span-columns(8);
+    }
+
+    .book-detail{
+        width: 100%;
+        background-color: #FAFAF1;
+        border: 1px solid palegoldenrod;
+        margin-bottom: 1em;
+
+            @include media($desktop) {
+
+                width: 31.1%;
+                margin: 0 1em 1em 0;
+                float: left;
+            }
+
+            .book-detail-info{
+                padding: 1em;
+
+                .book-title{
+                    margin-top: 0;
+                }
+                a{
+                    text-decoration: none;
+
+                    .btn-reserve{
+                        background-color: #9A2C26;
+                        width: 50%;
+                        padding: .5em;
+                        text-align: center;
+                        color: white;
+                        text-transform: uppercase;
+
+                        &:hover{
+                            background-color: #7B1D18;
+                        }
+                    }
+                }
+            }
+        }
+}

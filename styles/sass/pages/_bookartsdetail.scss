@@ -1,0 +1,27 @@
+.search-header.internal-page{
+    height: 200px;
+    background-position: 0%;
+    .page-title{
+        padding-top: 60px;
+    }
+}
+
+.book-arts-detail-wrapper{
+    @include outer-container;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+
+    .book-arts-detail{
+        @include span-columns(12);
+        text-align: center;
+        @include media($desktop) {
+            @include span-columns(6);
+        }
+    }
+
+    .book-arts-detail-information{
+        @include span-columns(12);
+    }
+
+
+}
