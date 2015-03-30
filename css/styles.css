@@ -641,11 +641,15 @@ footer {
   footer .footer-content {
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 1em; }
     footer .footer-content::after {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width: 1000px) {
+      footer .footer-content {
+        padding: 0; } }
     footer .footer-content .library-info-container {
       float: left;
       display: block;
@@ -716,7 +720,7 @@ body {
   font-weight: 400; }
 
 section.search-header {
-  background: url("/library/images/holding-book.png");
+  background: url("/images/holding-book.png");
   background-size: cover;
   height: 356px;
   color: white; }
@@ -887,13 +891,13 @@ section.more-links {
         section.more-links .more-info .additional-links ul li {
           margin-bottom: .25em; }
   section.more-links .special-collections {
-    background: url("/library/images/book.png");
+    background: url("/images/book.png");
     background-size: cover; }
   section.more-links .images-media {
-    background: url("/library/images/book-desk.png");
+    background: url("/images/book-desk.png");
     background-size: cover; }
   section.more-links .additional-resources {
-    background: url("/library/images/full-desk.png");
+    background: url("/images/full-desk.png");
     background-size: cover; }
 
 section.exhibit-support {
@@ -1187,7 +1191,23 @@ h2 {
           background-color: darkorange; }
     .internal-wrapper .internal-aside-wrapper .internal-aside .main-section-links {
       background-color: #3D3B36;
-      color: white; }
+      color: white;
+      padding: 1.25em; }
+      .internal-wrapper .internal-aside-wrapper .internal-aside .main-section-links ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .internal-wrapper .internal-aside-wrapper .internal-aside .main-section-links ul a {
+          color: white;
+          text-decoration: none; }
+          .internal-wrapper .internal-aside-wrapper .internal-aside .main-section-links ul a:visited {
+            color: white; }
+        .internal-wrapper .internal-aside-wrapper .internal-aside .main-section-links ul li {
+          margin-bottom: .5em;
+          border-bottom: 1px solid white;
+          padding-bottom: .5em; }
+          .internal-wrapper .internal-aside-wrapper .internal-aside .main-section-links ul li:hover {
+            color: lightgray; }
 
 .search-header.internal-page {
   height: 200px;
@@ -1263,3 +1283,57 @@ h2 {
     width: 100%; }
     .book-arts-detail-wrapper .book-arts-detail-information:last-child {
       margin-right: 0; }
+
+.personal-info-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em; }
+  .personal-info-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .personal-info-wrapper .alerts-wrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 1em; }
+    .personal-info-wrapper .alerts-wrapper:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 1000px) {
+      .personal-info-wrapper .alerts-wrapper {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        .personal-info-wrapper .alerts-wrapper:last-child {
+          margin-right: 0; } }
+    .personal-info-wrapper .alerts-wrapper .account-alerts {
+      background-color: #89C5B9;
+      color: white;
+      padding: 1em; }
+      .personal-info-wrapper .alerts-wrapper .account-alerts .alerts-title {
+        margin-top: .5em;
+        padding-bottom: .5em;
+        border-bottom: 1px solid white; }
+  .personal-info-wrapper .account-info-wrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .personal-info-wrapper .account-info-wrapper:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 1000px) {
+      .personal-info-wrapper .account-info-wrapper {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 74.41059%; }
+        .personal-info-wrapper .account-info-wrapper:last-child {
+          margin-right: 0; } }
+    .personal-info-wrapper .account-info-wrapper .account-info {
+      background-color: #EFEFEF;
+      padding: 1em;
+      margin-bottom: 1em; }

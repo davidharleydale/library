@@ -46,50 +46,79 @@
     </nav>
 </header>
 
-<section class="search-header internal-page">
+<section class="search-header">
     <div class="page-title">
         <h1>Decker Library</h1>
     </div>
+    <div class="search-bar">
+        <div class="search-block">
+            Search
+        </div>
+        <div class="search-form">
+            <form>
+                <input type="text" name="looking-for" placeholder="I'm looking for...">
+                <select>
+                  <option value="pick a section">Pick a section</option>
+                  <option value="fiction">Fiction</option>
+                  <option value="non-fiction">Non-Fiction</option>
+                  <option value="digital">Digital</option>
+                </select>
+                <input class="griffithgothicblack" type="submit" value="Go">
+            </form>
+        </div>
+
+    </div>
 </section>
 
-
-
-<section class="book-arts-detail-wrapper">
-<div class="book-arts-detail-container">
-    <div class="book-arts-detail">
-        <img src="images/book-detail-shot.jpg">
+<section class="personal-info-wrapper">
+    <div class="alerts-wrapper">
+        <div class="account-alerts">
+            <p class="alerts-title griffithgothicblack">
+                Account Alerts
+            </p>
+            <p>
+                <strong>Your status:</strong> OK
+            </p>
+            <p>
+                <strong>Checkouts Total:</strong> 0
+            </p>
+            <p>
+                <strong>Holds Total:</strong> 0
+            </p>
+            <p>
+                <strong>Fines Total due:</strong> $0.00
+            </p>
+        </div>
     </div>
-    <div class="book-arts-detail">
-        <img src="images/book-detail-shot-2.jpg">
+
+    <div class="account-info-wrapper">
+        <div class="account-info">
+            <p class="griffithgothicblack">
+                Personal Information
+            </p>
+            David Dale<br>
+            1301 W Mount Royal Ave<br>
+            Baltimore MD<br>
+            21217
+
+        </div>
+        <div class="account-info">
+            <p class="griffithgothicblack">Checkouts</p>
+            Total Items Checked Out: 0<br>
+            Items Overdue:Items Overdue: 0
+        </div>
+        <div class="account-info">
+            <p class="griffithgothicblack">Holds</p>
+            Items on Hold: 0<br>
+            Ready for Pickup:Ready for Pickup: 0
+        </div>
+        <div class="account-info">
+            <p class="griffithgothicblack">Fines</p>
+            Total Paid	$0.00
+        </div>
     </div>
-</div>
 
-<div class="book-arts-detail-information">
-    <p>TITLE - - -</p>
-
-    <p>Library in a Book: Seven Books in One</p>
-    <p>AUTHOR/S - - -</p>
-
-    <p>Wagner, Mark - website</p>
-    <p>CALL NUMBER - - -</p>
-
-    <p>N7433.4 .W234 L53 2001 Cage</p>
-    <p>PRESS/ES - - -</p>
-
-    <p>Bird Brain Press</p>
-    <p>PUBLISHER - - -</p>
-
-    <p>DESCRIPTION - - -</p>
-
-    <p>1 volume (unpaged): illustrations; 27 x 37 cm.</p>
-    <p>NOTE/S - - -</p>
-
-    <p>Contains seven small books, all by Mark Wagner, of varying size and shape in pockets in the main volume. Each book is accompanied by a library catalog card. </p>
-
-    <p>Contents: The man who married the sky -- The honey broker -- Incident at the butcher's -- Tag -- Printing wheel --The fastener incident -- Professor Plumb and the kissing report.
-    </p></div>
 </section>
-
 
 
 
@@ -161,15 +190,12 @@
     <script src="//use.typekit.net/lcu1kmo.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="/js/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/test.js"></script>
-    <script src="/js/masonry.js"></script>
-<!-- build:js scripts/site.js -->
-<!-- bower:js -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
+    <!-- build:js scripts/site.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
 </body>
 

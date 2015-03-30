@@ -32,6 +32,11 @@ footer {
 
     .footer-content{
         @include outer-container;
+        padding: 1em;
+        @include media($desktop) {
+            padding: 0;
+        }
+
 
         .library-info-container{
             @include span-columns(9);
