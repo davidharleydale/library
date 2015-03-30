@@ -720,7 +720,7 @@ body {
   font-weight: 400; }
 
 section.search-header {
-  background: url("/images/holding-book.png");
+  background: url("/library/images/holding-book.png");
   background-size: cover;
   height: 356px;
   color: white; }
@@ -891,13 +891,13 @@ section.more-links {
         section.more-links .more-info .additional-links ul li {
           margin-bottom: .25em; }
   section.more-links .special-collections {
-    background: url("/images/book.png");
+    background: url("/library/images/book.png");
     background-size: cover; }
   section.more-links .images-media {
-    background: url("/images/book-desk.png");
+    background: url("/library/images/book-desk.png");
     background-size: cover; }
   section.more-links .additional-resources {
-    background: url("/images/full-desk.png");
+    background: url("/library/images/full-desk.png");
     background-size: cover; }
 
 section.exhibit-support {
